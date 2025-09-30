@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake News Detector</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 350px;
+            padding: 15px;
+            color: #333;
+        }
+        h3 {
+            margin-top: 0;
+            color: #444;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+        #headline {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-style: italic;
+            min-height: 40px;
+        }
+        #author-info {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+            display: none;
+        }
+        #result {
+            margin-bottom: 15px;
+        }
+        .prediction-result {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .confidence {
+            font-size: 14px;
+            color: #666;
+        }
+        .confidence-container {
+            background-color: #eee;
+            border-radius: 4px;
+            height: 20px;
+            margin: 10px 0;
+            position: relative;
+        }
+        .confidence-bar {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        .real {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .fake {
+            background-color: #F44336;
+            color: white;
+        }
+        .probabilities {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .warning {
+            background-color: #FFF9C4;
+            padding: 8px;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #5D4037;
+        }
+        .error {
+            color: #F44336;
+            font-weight: bold;
+        }
+        button {
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #3367d6;
+        }
+    </style>
+</head>
+<body>
+    <h3>Headline/Tweet:</h3>
+    <p id="headline">Loading...</p>
+    <div id="author-info"></div>
+    
+    <h3>Analysis:</h3>
+    <div id="result">Checking...</div>
+    
+    <div class="confidence-container">
+        <div id="confidence-bar" class="confidence-bar"></div>
+    </div>
+    
+    <div class="probabilities">
+        <span>Real: <span id="real-percent">0%</span></span>
+        <span>Fake: <span id="fake-percent">0%</span></span>
+    </div>
+    
+    <button id="refresh-btn">Refresh Analysis</button>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
