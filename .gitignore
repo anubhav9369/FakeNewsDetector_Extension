@@ -1,2 +1,9 @@
 venv/
 api/venv/
+
+# Ignore model files
+models/
+*.pt
+*.pth
+*.bin
+*.pkl
