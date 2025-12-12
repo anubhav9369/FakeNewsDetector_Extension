@@ -20,7 +20,7 @@ This project presents a RoBERTa-based fake news detection system that identifies
 
 The system classifies news as FAKE or REAL with high accuracy and supports real-time browser-level predictions.
 
-# 🗂 6. Dataset
+# 🗂 Dataset
 
 Includes Fake.csv and True.csv containing:
 
@@ -29,13 +29,13 @@ Article text
 Subject
 Publish date
 
-# 📊 9. Model Performance
+# 📊 Model Performance
 
 RoBERTa gives the best accuracy for short and long news formats
 Provides better accuracy without high computation cost
 Balanced performance for real-time deployment
 
-# 🧩 10. Chrome Extension
+# 🧩 Chrome Extension
 
 The Chrome Extension:
 ✔ Extracts news headline from any news page
@@ -52,7 +52,7 @@ Click Load Unpacked
 Select the extension/ folder from this repository
 Extension will appear in the Chrome toolbar
 
-# 💾 12. Model Download (Google Drive)
+# 💾 Model Download (Google Drive)
 
 GitHub cannot store files >100 MB, so download them automatically.
 
@@ -80,7 +80,7 @@ https://drive.google.com/file/d/1pbdk6kV4tuAbAMKGZPfnGixH2cL6Ou18/view?usp=shari
 roberta_model_weights.pt
 https://drive.google.com/file/d/1TWH1x8RCXGtMTzcJtf-OBJWMA9IV3dsb/view?usp=sharing
 
-# 🏗 13. Project Structure
+# 🏗 Project Structure
 FakeNewsDetector/
 │── api/
 │   ├── app.py
@@ -97,7 +97,7 @@ FakeNewsDetector/
 │── requirements.txt
 
 
-# 🚀 14. How to Run Backend API
+# 🚀 How to Run Backend API
 Install dependencies
 pip install -r requirements.txt
 
